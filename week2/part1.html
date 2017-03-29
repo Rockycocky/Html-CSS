@@ -10,9 +10,11 @@
 	var guess ;
 
 	function do_game(){
-     colors.sort;
+     colors.sort();
      target = Math.floor(Math.random *colors.length);
      alert(colors.length);
+
+     target = Math.floor(Math.random() *colors.length);
      do{
      	guess = prompt("Iam thinking of one of these colors:\n"+colors +"\nwhat colors am i thinking?")
      }while(guess!=colors[target]);
