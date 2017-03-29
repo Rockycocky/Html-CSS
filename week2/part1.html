@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Guessing Game</title>
+</head>
+<body onload="do_game()">
+  <script>
+	var colors = ["Aliceblue","Antiquewhite","Aquamarine","Azure","Beige","Bisque","Black","Blue","Coral","Brown"];
+	var target ;
+	var guess ;
+
+	function do_game(){
+     colors.sort;
+     target = Math.floor(Math.random *colors.length);
+     do{
+     	guess = prompt("Iam thinking of one of these colors:\n"+colors +"\nwhat colors am i thinking?")
+     }while(guess!=colors[target]);
+	};
+  </script>
+</body>
+</html>
